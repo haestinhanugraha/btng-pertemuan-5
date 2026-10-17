@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hestinia Hanugraha's portfolio, a first-year Informatics student exploring technology and web development.">
+  <title>A Bit of Everything | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Hiasan latar -->
+  <div id="progres" aria-hidden="true"></div>
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div id="kelopak-jatuh" aria-hidden="true"></div>
+
+  <!-- HEADER: judul website + tombol Ganti Tema -->
+  <header class="atas">
+    <span class="logo">The Making of Me</span>
+    <button id="tombol-tema" class="tombol tombol-garis" type="button" aria-pressed="false">Change Theme</button>
+  </header>
+
+  <main>
+
+    <!-- BAGIAN PROFIL: nama, foto, deskripsi singkat, tombol -->
+    <section class="hero">
+      <div class="hero-teks">
+        <p class="sapaan">Hello, I'm</p>
+        <h1 id="nama">Joanie H.</h1>
+        <p id="peran" class="peran mengetik">First-Year Informatics Student.</p>
+        <p id="deskripsi">I'm Joanie, a curious learner passionate about technology, creative problem-solving, and creating simple yet meaningful digital solutions.</p>
+
+        <div class="aksi">
+          <button id="tombol-teks" class="tombol" type="button">Change Text</button>
+          <button id="tombol-font" class="tombol tombol-garis" type="button" aria-pressed="false">Change Font</button>
+        </div>
+      </div>
+
+      <!-- Panggung foto: miring mengikuti kursor, bisa disentuh -->
+      <div class="panggung" id="panggung" role="button" tabindex="0" aria-label="Tap Hestinia's photo to bloom again and scatter petals">
+        <div class="lingkar"></div>
+        <div class="cincin"></div>
+
+        <div class="bingkai" id="bingkai">
+          <img id="foto" src="fotopict.jpg" alt="Profile photo">
+        </div>
+
+        <span class="lencana lencana-1" aria-hidden="true">Informatics</span>
+        <span class="lencana lencana-2" aria-hidden="true">Web</span>
+        <span class="lencana lencana-3" aria-hidden="true">UI Design</span>
+        <span class="lencana lencana-4" aria-hidden="true">Algorithms</span>
+
+        <p class="petunjuk">Tap the Photo</p>
+      </div>
+    </section>
+
+    <!-- Pita kata bergerak -->
+    <div class="ticker-bungkus" aria-hidden="true">
+      <div class="ticker">
+        <div class="ticker-jalur">
+          <div class="ticker-grup">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Git</span><span>Figma</span><span>Databases</span>
+          </div>
+          <div class="ticker-grup">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Git</span><span>Figma</span><span>Databases</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BAGIAN KETERAMPILAN: 3 kartu -->
+    <section class="bagian">
+      <div class="bagian-kepala">
+        <h2>My Interests &amp; Skills</h2>
+        <p class="pengantar">Tap or click a card to see the details.</p>
+      </div>
+
+      <div class="daftar-kartu">
+
+        <article class="kartu kartu-satu" role="button" tabindex="0" aria-expanded="false" data-persen="85">
+          <span class="nomor" aria-hidden="true">01</span>
+          <div class="ikon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5" pathLength="100"/>
+              <path d="M12 6.5C14 5 17 4.5 20.5 5v13c-3.5-.5-6.5 0-8.5 1.5" pathLength="100"/>
+              <path d="M12 6.5v13" pathLength="100"/>
+            </svg>
+          </div>
+          <h3>Reading</h3>
+          <p>Getting lost in good books for hours and picking up new ideas along the way.</p>
+
+          <div class="meter">
+            <div class="meter-label"><span>Skill Level</span><span class="angka">0%</span></div>
+            <div class="meter-bar"><span class="meter-isi"></span></div>
+          </div>
+
+          <div class="detail-kartu">
+            <div>
+              <p>Reading keeps me curious. I enjoy stories and non-fiction alike, and it helps me learn new vocabulary, think more deeply, and stay inspired.</p>
+              <ul class="chip-daftar">
+                <li>Books</li><li>Curiosity</li><li>Focus</li><li>Learning</li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="petunjuk-kartu"><span class="teks-petunjuk">View details</span><i class="panah"></i></span>
+        </article>
+
+        <article class="kartu kartu-dua" role="button" tabindex="0" aria-expanded="false" data-persen="75">
+          <span class="nomor" aria-hidden="true">02</span>
+          <div class="ikon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="13" rx="3" pathLength="100"/>
+              <path d="M10 8.5v5l4-2.5z" pathLength="100"/>
+              <path d="M6 20.5h12" pathLength="100"/>
+            </svg>
+          </div>
+          <h3>Editing</h3>
+          <p>Turning small details into something that looks just right.</p>
+
+          <div class="meter">
+            <div class="meter-label"><span>Skill Level</span><span class="angka">0%</span></div>
+            <div class="meter-bar"><span class="meter-isi"></span></div>
+          </div>
+
+          <div class="detail-kartu">
+            <div>
+              <p>Editing is my creative escape. I like adjusting colors, timing, and layout until everything feels balanced and polished.</p>
+              <ul class="chip-daftar">
+                <li>Creativity</li><li>Detail-oriented</li><li>Visual Design</li><li>Patience</li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="petunjuk-kartu"><span class="teks-petunjuk">View details</span><i class="panah"></i></span>
+        </article>
+
+        <article class="kartu kartu-tiga" role="button" tabindex="0" aria-expanded="false" data-persen="70">
+          <span class="nomor" aria-hidden="true">03</span>
+          <div class="ikon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20.5C6 16 3 12.5 3 9a4.5 4.5 0 0 1 9-1.5A4.5 4.5 0 0 1 21 9c0 3.5-3 7-9 11.5z" pathLength="100"/>
+            </svg>
+          </div>
+          <h3>Volunteering</h3>
+          <p>Giving my time and energy to help others and the community.</p>
+
+          <div class="meter">
+            <div class="meter-label"><span>Skill Level</span><span class="angka">0%</span></div>
+            <div class="meter-bar"><span class="meter-isi"></span></div>
+          </div>
+
+          <div class="detail-kartu">
+            <div>
+              <p>Volunteering has taught me teamwork, empathy, and responsibility. I enjoy being part of activities that make a real difference for other people.</p>
+              <ul class="chip-daftar">
+                <li>Teamwork</li><li>Empathy</li><li>Communication</li><li>Responsibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="petunjuk-kartu"><span class="teks-petunjuk">View details</span><i class="panah"></i></span>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="kaki">
+    <p>© 2026 Hestinia Hanugraha. All rights reserved</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
